@@ -22,6 +22,9 @@ def calcPrecision(ref, nGrams):
     ref_gram3 = nGrammer(ref_gram1, 3, ref_nGrams)
     ref_gram4 = nGrammer(ref_gram1, 4, ref_nGrams)
 
+    ACvar = len(ref_gram2/len(nGrams[1])
+    print(ACvar)
+
     i=0
     while i < len(nGrams):
         ref_len = len(ref_nGrams[i])
@@ -49,4 +52,4 @@ gram3 = nGrammer(splitted, 3, nGrams)
 gram4 = nGrammer(splitted, 4, nGrams)
 
 BLEU = calcMin(inp, ref) * calcPrecision(ref, nGrams)
-print(BLEU)
+print(BLEU, ACvar)
